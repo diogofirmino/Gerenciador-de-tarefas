@@ -15,5 +15,6 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
     
-    url(r'^projects/', 'dev01.gerenciadorprojetos.views.index')
+    url(r'^projects/$', 'dev01.gerenciadorprojetos.views.index'),    
+    url(r'^projects/create', 'dev01.gerenciadorprojetos.views.create'),
 )

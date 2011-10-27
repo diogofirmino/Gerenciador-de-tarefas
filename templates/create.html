@@ -1,0 +1,7 @@
+<form method="POST" action="create">
+    {% for field in project_form %}{% csrf_token %}
+        <p>{{field.label}}{{ field }}</p>
+    {% endfor %}
+<input type="submit" value="Create" />
+</form>
+
