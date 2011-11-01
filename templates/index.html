@@ -1,10 +1,10 @@
 {% if project_list %}
     <ul>
     {% for project in project_list %}
-        <li>{{ project.title}}</li>
+        <li>{{ project.title}} - {{ project.description}}</li>
     {% endfor %}
     </ul>
 {% else %}
     <p>No projects are available.</p>
 {% endif %}
-<a href="/projects/create">New Project</a>
+<a href="/projects/new">New Project</a>
